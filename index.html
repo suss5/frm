@@ -1,18 +1,19 @@
 <html>
 <body>
-  <h1>Forum1</h1>
+  <h1>Forum2</h1>
 <script>
 // String from database 
 const myString = "This is a long text string that should wrap automatically...one to three four five six seven eight  one to three four five six seven eight";
 
-// Create wrapper 
-const container = document.createElement('div');
 
-// Render as HTML
-container.innerHTML = `<p>${myString}</p>`; 
 
 // Add to page
 for(i=0;i<10;i++){
+  const container = document.createElement('div');
+
+  container.innerHTML = `<p>${myString}</p>`;
+
+
 document.body.appendChild(container);
 }
 </script>

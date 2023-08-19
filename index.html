@@ -1,0 +1,18 @@
+<html>
+<body>
+  <h1>Forum</h1>
+<script>
+// String from database 
+const myString = "This is a long text string that should wrap automatically...";
+
+// Create wrapper 
+const container = document.createElement('div');
+
+// Render as HTML
+container.innerHTML = `<p>${myString}</p>`; 
+
+// Add to page
+document.body.appendChild(container);
+</script>
+</body>
+</html>
